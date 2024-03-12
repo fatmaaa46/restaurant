@@ -1,0 +1,144 @@
+/* styles.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+.text1 {
+  margin-top: 22px;
+  font-style:normal;
+}
+
+.topnav {
+  overflow: hidden;
+  }
+
+.topnav .search-container {
+ float: right; 
+ margin-bottom :22px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 22px;
+  font-size: 17px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 22px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+ .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+/* ************************************************** */
+
+/* ****************************** */
+/* Your existing styles */
+
+.payment-icons {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.payment-icon {
+  width: 40px;
+  
+  height: 40px;
+  border-radius: 50%!important;
+  background-color: #24A451;
+
+
+}
+ 
+.containers { 
+  display: grid;
+  font-size: 15px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 5px; 
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
+.text{
+  padding-left: 5%;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  padding-top: 2%;
+  padding-bottom: 1%;
+
+
+}
+.image{
+  width: 100%;
+}
+
+/* **** CSS  PAGE DE BOUTIQUES **** */
+.containers1 { 
+  display: grid;
+  font-size: 15px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 5px; 
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-top: 2%;
+  text-align: center;
+  text-size-adjust: 3%;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+.title{
+font:bold;
+font-size: x-large;
+text-decoration: solid;
+text-transform: uppercase;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  word-spacing: 5px; 
+  background-color: #f9cdad75;
+}
+
+
+li  {
+  word-spacing: 5px; 
+  display: flex;
+  float: left;
+  color: rgb(19, 18, 18);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+/* ********************* ******************************************* */
