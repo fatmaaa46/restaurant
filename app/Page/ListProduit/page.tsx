@@ -1,13 +1,13 @@
 import React from 'react'
-import NavProduit from './NavProduit'
 import Header from '../Boutique/Header'
 import CardProduit from './CardProduit'
 import MenuCategorie from '../Boutique/MenuCategorie'
+import Header1 from '@/app/components/Header1'
 
 function ListProduit() {
   return (
     <div>
-      <NavProduit />
+      <Header1 />
       <Header />
       <MenuCategorie />
       <CardProduit />

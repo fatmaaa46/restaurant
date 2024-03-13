@@ -1,12 +1,18 @@
 "use client"
-import store from '@/app/components/store';
-import { Listcard } from '@/app/constants/Listcard';
+import store, { setSelectedCategorie } from '@/app/components/store';
+
 
 import React from 'react'
 import { useSnapshot } from 'valtio';
+import Modal2 from '../Modal2/Modal2';
 
-function CardProduit() {
+function CardProduit({ showModal, setShowModal }: any) {
     const { id } = useSnapshot(store)
+    const handleCommandeClick = (item: string) => {
+        setSelectedCategorie(item)
+        setShowModal(true);
+        // console.log({ selectedCategorie })
+    };
 
     const cat: any = localStorage.getItem("card");
 
@@ -23,7 +29,7 @@ function CardProduit() {
                         {Object.entries(value.content).map(([innerKey, innerValue]: any) => (
                             <div className="col-md-4 my-3">
 
-                                <div className="card" style={{ width: "18rem", border: "none" }} key={innerKey}>
+                                <div className="card" style={{ width: "18rem" }} key={innerKey}>
                                     <img
                                         className="card-img-top"
                                         src={
@@ -36,6 +42,26 @@ function CardProduit() {
                                             {card[innerValue.type][innerKey].title}
                                         </h5>
                                         <p className="card-text">{card[innerValue.type][innerKey].title} </p>
+
+                                        <button
+
+                                            className="mt-5 py-2 text-center h5 rounded font-weight-bold border-0"
+                                            type="button"
+                                            style={{
+                                                backgroundColor: "#28a745",
+                                                cursor: "pointer",
+                                                color: "white",
+                                                width: "16rem",
+                                                display: "flex",
+                                                justifyContent: "center",
+                                                alignItems: "center",
+                                            }}
+                                        // Ajoutez cet événement au bouton Commander
+                                        >
+                                            <span className="btn-txt" onClick={() => handleCommandeClick(card[innerValue.type][innerKey].title)}>Commander</span>
+                                        </button>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -43,9 +69,11 @@ function CardProduit() {
                     </div>
                 </div>
             ))}
-
+          {showModal && <Modal2 showModal={showModal} setShowModal={setShowModal} />}
         </div>
     );
 }
 
 export default CardProduit
+
+

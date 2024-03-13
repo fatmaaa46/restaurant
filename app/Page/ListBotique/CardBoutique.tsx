@@ -40,9 +40,12 @@ function CardBoutique() {
         <div className="row">
           {Object.values(ListShop).map((item: any, id: number) => (
             <div
-              className="col-md-6"
+              className="col-md-4 my-3"
               key={id}
               onClick={() => navigateToOtherPage(item.shopid)}
+              style={{
+                cursor: "pointer"
+              }}
             >
               <div className="box">
                 <div className="img-box">

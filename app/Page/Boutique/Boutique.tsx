@@ -15,7 +15,7 @@ function Boutique() {
       <Header />
       <MenuCategorie showModal={showModal} setShowModal={setShowModal} />
       <CardCategorie showModal={showModal} setShowModal={setShowModal} />
-      showModal && <Modal showModal={showModal} setShowModal={setShowModal} />
+      {showModal && <Modal showModal={showModal} setShowModal={setShowModal} />}
     </div>
   );
 }

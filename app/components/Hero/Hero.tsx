@@ -8,9 +8,6 @@ function Hero() {
         <header className="header_section">
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg custom_nav-container">
-              <a className="navbar-brand" href="index.html">
-                <span> Pizza </span>
-              </a>
             </nav>
           </div>
         </header>
