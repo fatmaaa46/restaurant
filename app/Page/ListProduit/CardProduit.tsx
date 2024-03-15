@@ -1,8 +1,9 @@
 "use client"
-import store, { setSelectedCategorie } from '@/app/components/store';
+import store, { setSelectedCategorie, setSelectedImage } from '@/app/components/store';
 import React from 'react'
 import { useSnapshot } from 'valtio';
 import Modal2 from '../Modal2/Modal2';
+import FormatCurrency from "../../components/Cart/FormatCurrency";
 
 function CardProduit({ showModal, setShowModal }: any) {
     const { id } = useSnapshot(store)
@@ -23,7 +24,7 @@ function CardProduit({ showModal, setShowModal }: any) {
             {Object.entries(card.workflow).map(([key, value]: any) => (
                 <div className=" my-2 " key={key}>
                     <h5 className="card-title my-5">{card[value.type][key].title}</h5>
-                    <div className="row">
+                    <div className="row g-3"   >
                         {Object.entries(value.content).map(([innerKey, innerValue]: any) => (
                             <div className="col-md-4 my-3">
 
@@ -35,11 +36,11 @@ function CardProduit({ showModal, setShowModal }: any) {
                                         }
                                         alt="Card image cap"
                                     />
-                                    <div className="card-body">
-                                        <h5 className="card-title">
-                                            {card[innerValue.type][innerKey].title}
+                                    <div className="card-body d-flex flex-column">
+                                        <h5 className="d-flex justify-content-between align-items-baseline mb-4">
+                                            <span className="fs-2">{card[innerValue.type][innerKey].title} </span>
                                         </h5>
-                                        <p className="card-text">{card[innerValue.type][innerKey].title} </p>
+                                        <span className="ms-2 text-muted">{FormatCurrency{ card[innerValue.type][innerKey].price }} </span>
 
                                         <button
 
@@ -54,7 +55,7 @@ function CardProduit({ showModal, setShowModal }: any) {
                                                 justifyContent: "center",
                                                 alignItems: "center",
                                             }}
-                                            onClick={() => handleCommandeClick(card[innerValue.type][innerKey].title)}
+                                            onClick={() => { setSelectedImage(card[innerValue.type][innerKey].imageUrl.Default.urlDefault ? card[innerValue.type][innerKey].imageUrl.Default.urlDefault : "https://www.commande-pizzatime.fr/CESARWEB_WEB/repimage/83bbc4350c114000b0e2d6c4ff204215/3/web/Famille122.webp"); handleCommandeClick(card[innerValue.type][innerKey].title) }}
                                         // Ajoutez cet événement au bouton Commander
                                         >
                                             <span className="btn-txt" >Commander</span>
@@ -68,7 +69,7 @@ function CardProduit({ showModal, setShowModal }: any) {
                     </div>
                 </div>
             ))}
-          {showModal && <Modal2 showModal={showModal} setShowModal={setShowModal} />}
+            {showModal && <Modal2 showModal={showModal} setShowModal={setShowModal} />}
         </div>
     );
 }
