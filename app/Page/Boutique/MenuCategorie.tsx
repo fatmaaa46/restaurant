@@ -16,7 +16,6 @@ function MenuCategorie({ showModal, setShowModal }: any) {
         : (document.getElementById("mySelect") as any).value
     );
 
-    setShowModal(true);
   };
 
   const cat: any = localStorage.getItem("card");

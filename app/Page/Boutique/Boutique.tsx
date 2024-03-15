@@ -3,7 +3,6 @@ import React from "react";
 import Header from "./Header";
 import MenuCategorie from "./MenuCategorie";
 import CardCategorie from "./CardCategorie";
-import Header1 from "@/app/components/Header1";
 import Modal from "../Modal/Modal";
 
 function Boutique() {
@@ -12,7 +11,7 @@ function Boutique() {
   return (
     <div>
 
-      <Header />
+      {/* <Header /> */}
       <MenuCategorie showModal={showModal} setShowModal={setShowModal} />
       <CardCategorie showModal={showModal} setShowModal={setShowModal} />
       {showModal && <Modal showModal={showModal} setShowModal={setShowModal} />}

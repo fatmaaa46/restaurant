@@ -1,7 +1,5 @@
 "use client"
 import store, { setSelectedCategorie } from '@/app/components/store';
-
-
 import React from 'react'
 import { useSnapshot } from 'valtio';
 import Modal2 from '../Modal2/Modal2';
@@ -56,9 +54,10 @@ function CardProduit({ showModal, setShowModal }: any) {
                                                 justifyContent: "center",
                                                 alignItems: "center",
                                             }}
+                                            onClick={() => handleCommandeClick(card[innerValue.type][innerKey].title)}
                                         // Ajoutez cet événement au bouton Commander
                                         >
-                                            <span className="btn-txt" onClick={() => handleCommandeClick(card[innerValue.type][innerKey].title)}>Commander</span>
+                                            <span className="btn-txt" >Commander</span>
                                         </button>
 
 

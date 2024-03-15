@@ -17,6 +17,7 @@
     "@reduxjs/toolkit": "^2.2.1",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "boxicons": "^2.1.4",
     "framer-motion": "^11.0.5",
     "glightbox": "^3.2.0",
     "next": "^14.1.3",
