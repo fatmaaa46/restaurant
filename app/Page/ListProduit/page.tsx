@@ -7,12 +7,13 @@ import Header1 from '@/app/components/Header1'
 import Modal2 from '../Modal2/Modal2'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router } from "react-router-dom";
+import HeaderNav from '@/app/components/Navbar/Headerpanier'
 
 function ListProduit() {
   const [showModal, setShowModal] = useState(false);
   return (
     <div>
-      <Header1 />
+      <HeaderNav />
       <Header />
       <MenuCategorie />
       <CardProduit showModal={showModal} setShowModal={setShowModal} />

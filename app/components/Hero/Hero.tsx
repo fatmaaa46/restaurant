@@ -82,13 +82,6 @@ function Hero() {
                 <img src="images/slider-img4.png" alt="" />
               </div>
             </div>
-            <div className="col-sm">
-              <div className="item">
-                <div className="img-box">
-                  <img src="images/slider-img4.png" alt="" />
-                </div>
-              </div>
-            </div>
           </form>
         </div>
       </div>

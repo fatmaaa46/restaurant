@@ -2,15 +2,13 @@
 import React, { Children } from 'react'
 import Image from 'next/image'
 import i1 from '../../public/image/i1.jpg' 
-import DropDownMenu from './DropDown/DropDownMenu';
 import Cart from './Cart/Cart';
-import ShoppingCartProvider from './Cart/ShoppingCartContext';
+
 
 
 
 const Header1 = () => {
   return (
-    // <ShoppingCartProvider>
     <div className='header'>
         
       <div> 
@@ -35,7 +33,7 @@ const Header1 = () => {
     </div>
          
     </div>
-    // </ShoppingCartProvider>
+    
   );
 };
 
