@@ -2,7 +2,7 @@
 import store, { setSelectedCategorie, setSelectedImage } from '@/app/components/store';
 import React, { ChangeEvent, useEffect } from 'react';
 import { useSnapshot } from 'valtio';
-// import Modal2 from '../Modal2/Modal2';
+import Modal2 from '../Modal2/Modal2';
 
 
 function CardProduit({ showModal, setShowModal }: any) {
@@ -253,7 +253,7 @@ function CardProduit({ showModal, setShowModal }: any) {
                     </div>
                 </div>
             ))}
-            {/* {showModal && <Modal2 showModal={showModal} setShowModal={setShowModal} />} */}
+             {showModal && <Modal2 showModal={showModal} setShowModal={setShowModal} />} 
         </div>
     );
 }

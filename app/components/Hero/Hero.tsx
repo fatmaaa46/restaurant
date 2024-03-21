@@ -19,7 +19,7 @@ function Hero() {
                 <div className="detail-box">
                   <h1>Pizza Time </h1>
                   <p>
-                    when looking at its layout. The point of using Lorem Ipsum
+                    Enjoy Our Delicious Pizza
                   </p>
                 </div>
 

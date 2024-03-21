@@ -1,12 +1,12 @@
 export const ListShop  :any ={
   
         "2": {
-          "town": "GUYANCOURT",
+          "town": "Guyancourt",
           "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/2/PromoWeb.png",
           "Nature": "boutique",
           "shopid": 2,
-          "Address": "2 PL CHARLOTTE PERRIAND ",
-          "Company": "Pizza Time Guyancourt",
+          "Address": "2 Pl Charlotte Perriand ",
+          "Company": "PIZZA  TIME  GUYANCOURT ",
           "Country": "FRANCE",
           "PostalCode": "78280",
           "Responsible": "",
@@ -15,12 +15,12 @@ export const ListShop  :any ={
         },
     
         "3": {
-          "town": "MEAUX",
+          "town": "Meaux",
           "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/3/PromoWeb.png",
           "Nature": "boutique",
           "shopid": 3,
-          "Address": "9 RUE TIME CORNILLON",
-          "Company": "Pizza Time Meaux                  ",
+          "Address": "9 Rue Time Cornillon ",
+          "Company": "PIZZA TIME MEAUX  ",
           "Country": "FRANCE",
           "PostalCode": "77100 ",
           "Responsible": "",
@@ -28,12 +28,12 @@ export const ListShop  :any ={
           "closingTime": ""
         },
         "4": {
-          "town": "AMIENS",
+          "town": "Amiens",
           "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/8/PromoWeb.png",
           "Nature": "boutique",
           "shopid": 4,
-          "Address": "6 RUE LATTRE DE TASSIGNY",
-          "Company": "Pizza Time Amiens Centre Ville",
+          "Address": "6 Rue Lattre de Tassigny ",
+          "Company": "PIZZA TIME AMIENS CENTRE VILLE",
           "Country": "FRANCE",
           "PostalCode": "80000",
           "Responsible": "",
@@ -41,12 +41,12 @@ export const ListShop  :any ={
           "closingTime": "22:30"
         },
         "5": {
-          "town": "AMIENS",
+          "town": "Amiens",
           "image": "https://www.commande-pizzatime.fr/CESARWEB_WEB//repimage/83bbc4350c114000b0e2d6c4ff204215/7/PromoWeb.png",
           "Nature": "boutique",
           "shopid": 5,
-          "Address": "24 B RUE LEONARD DE VINCI",
-          "Company": "Pizza Time Amiens Saint-Leu",
+          "Address": "24 B Rue Leonard De Vinci ",
+          "Company": "PIZZA TIME AMIENS SAINT-LEU",
           "Country": "FRANCE",
           "PostalCode": "80000",
           "Responsible": "",

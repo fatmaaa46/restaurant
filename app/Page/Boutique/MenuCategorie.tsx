@@ -1,10 +1,11 @@
 "use client";
+import Dropdownpanier from "@/app/components/DropDown/Dropdownpanier";
 import store, { setSelectedCategorie } from "@/app/components/store";
 import { Listcard } from "@/app/constants/Listcard";
 import { Card } from "@nextui-org/react";
 import React, { useState } from "react";
 import { useSnapshot } from "valtio";
-import Modal from "../Modal/Modal";
+
 
 function MenuCategorie({ showModal, setShowModal }: any) {
   const { id } = useSnapshot(store);
@@ -57,10 +58,12 @@ function MenuCategorie({ showModal, setShowModal }: any) {
                       </option>
                     ))}
                 </select>
-                {/* {showModal && <Modal showModal={showModal} setShowModal={setShowModal} />} */}
+               
               </div>
             )}
+
           </div>
+        
         </Card>
       </div>
     </div>

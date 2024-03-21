@@ -545,3 +545,33 @@ li {
   /* border: var(--bs-card-border-width) solid var(--bs-card-border-color); */
   /* border-radius: var(--bs-card-border-radius); */
 }
+
+/* **************************************************************************** */
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+.footer-links {
+  margin-bottom: 2px;
+}
+
+
+.footer-links a {
+  color: rgba(250, 246, 246, 0.973);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.social-links a {
+  right: 80px;
+  width: 80px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0px solid rgba(243, 240, 240, 0.993);
+  font-size: 28px;
+  color: rgba(243, 240, 240, 0.993);
+  margin-right: 5px;
+  transition: 0.3s;
+}
