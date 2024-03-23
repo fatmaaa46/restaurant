@@ -176,7 +176,6 @@ function CardProduit({ showModal, setShowModal }: any) {
 
     let card = JSON.parse(cat || null);
 
-
     return (
         <div className="shop container">
 
@@ -197,8 +196,8 @@ function CardProduit({ showModal, setShowModal }: any) {
                                             alt="Card image cap"
                                             onClick={() => { setSelectedImage(card[innerValue.type][innerKey].imageUrl.Default.urlDefault ? card[innerValue.type][innerKey].imageUrl.Default.urlDefault : "https://www.commande-pizzatime.fr/CESARWEB_WEB/repimage/83bbc4350c114000b0e2d6c4ff204215/3/web/Famille122.webp"); handleCommandeClick(card[innerValue.type][innerKey].title) }}
                                         />
-                                        <h5 className="product-title"> {card[innerValue.type][innerKey].title}</h5>
-                                        <span className="cart-price">{card[innerValue.type][innerKey].priceHT} </span>
+                                        <h5 className="product-title"> {card[innerValue.type][innerKey].title} </h5>
+                                        <span className="cart-price">{card[innerValue.type][innerKey]?.price?.priceHT ? card[innerValue.type][innerKey]?.price?.priceHT : 0} </span>
 
                                         <button
                                             className="add-cart"
@@ -253,7 +252,7 @@ function CardProduit({ showModal, setShowModal }: any) {
                     </div>
                 </div>
             ))}
-             {showModal && <Modal2 showModal={showModal} setShowModal={setShowModal} />} 
+            {showModal && <Modal2 showModal={showModal} setShowModal={setShowModal} />}
         </div>
     );
 }

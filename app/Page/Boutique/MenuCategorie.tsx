@@ -58,12 +58,12 @@ function MenuCategorie({ showModal, setShowModal }: any) {
                       </option>
                     ))}
                 </select>
-               
+
               </div>
             )}
 
           </div>
-        
+
         </Card>
       </div>
     </div>

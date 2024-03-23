@@ -552,18 +552,31 @@ li {
 --------------------------------------------------------------*/
 
 
-.footer-links {
-  margin-bottom: 2px;
+
+
+.icons {
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+   margin-bottom: 2px; 
 }
 
 
 .footer-links a {
   color: rgba(250, 246, 246, 0.973);
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
+
 }
 
+.social-links .facebook {
+  margin-right: -35px;
+
+}
+
+.social-links .instagram {
+  margin-right: -35px;
+ 
+}
 .social-links a {
   right: 80px;
   width: 80px;
@@ -572,6 +585,5 @@ li {
   border: 0px solid rgba(243, 240, 240, 0.993);
   font-size: 28px;
   color: rgba(243, 240, 240, 0.993);
-  margin-right: 5px;
-  transition: 0.3s;
+  margin-bottom: 5px;
 }

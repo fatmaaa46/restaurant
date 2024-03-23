@@ -9,8 +9,9 @@ import { useSnapshot } from "valtio/react";
 
 function Hero2() {
   const { id } = useSnapshot(store);
+  let shopId = id === 0 ? JSON.parse(JSON.stringify(localStorage.getItem("id"))) : id
 
-  const companyToShow: any = ListShop[id];
+  const companyToShow: any = ListShop[shopId];
   return (
     <>
       <div className="hero_area mb-5">
