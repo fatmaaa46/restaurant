@@ -59,22 +59,32 @@ function Hero2() {
                             {companyToShow.town}
                           </p>
 
-                          <div className="col-lg-3 col-md-6 footer-links">
-                            <div className="social-links d-flex" >
-                              <a href="https://www.commande-pizzatime.fr/cesarweb" className="facebook">
-                                <FaFacebook />
-                              </a>
-                              <a href="https://www.instagram.com/pizzatimefrance/" className="instagram">
-                                <FaInstagram />
-                              </a>
-                              <a href="#" className="twitter">
-                                <FaTwitter />
-                              </a>
-
+                          <div className="container my-5">
+                            <div className="row social-links d-flex">
+                              <div className="col-sm">
+                                {" "}
+                                <a
+                                  href="https://www.commande-pizzatime.fr/cesarweb"
+                                  className="facebook"
+                                >
+                                  <FaFacebook />
+                                </a>
+                              </div>
+                              <div className="col-sm">
+                                <a
+                                  href="https://www.instagram.com/pizzatimefrance/"
+                                  className="instagram"
+                                >
+                                  <FaInstagram />
+                                </a>
+                              </div>
+                              <div className="col-sm">
+                                <a href="#" className="twitter">
+                                  <FaTwitter />
+                                </a>
+                              </div>
                             </div>
                           </div>
-
-                          {/* {`${companyToShow.Company.replace(/\s/g, "")}`} */}
 
                         </div>
                       </div>
