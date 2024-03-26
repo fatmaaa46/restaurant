@@ -26,6 +26,7 @@ function ModalItem({ modal, setModal, Item }: any) {
         toggle();
     };
 
+    console.log("item:", Item)
     return (
         <Modal show={modal} onHide={toggle}>
             <Modal.Header closeButton>
@@ -34,7 +35,15 @@ function ModalItem({ modal, setModal, Item }: any) {
             <Modal.Body>
                 <img className="card-img-top" src={imageUrl} alt="Card image cap" />
                 Composition de base :
-                {Item?.basicCompositio?.title || 0}
+
+                {Item?.basicComposition && Object.entries(Item.basicComposition).map(([key, value]: any) => (
+                    <div className="my-2" key={key}>
+                        {value?.title || 0}
+
+
+                    </div>
+                ))}
+
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="primary" onClick={onClickAdd}>
