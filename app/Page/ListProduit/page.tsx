@@ -18,8 +18,7 @@ function ListProduit() {
       <HeaderNav />
       <Hero2 />
       <MenuCategorie />
-      <CardProduit showModal={showModal} setShowModal={setShowModal} />
-      {showModal && <Modal2 showModal={showModal} setShowModal={setShowModal} />}
+      <CardProduit />
 
 
 

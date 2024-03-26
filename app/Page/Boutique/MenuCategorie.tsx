@@ -1,5 +1,5 @@
 "use client";
-import Dropdownpanier from "@/app/components/DropDown/Dropdownpanier";
+
 import store, { setSelectedCategorie } from "@/app/components/store";
 import { Listcard } from "@/app/constants/Listcard";
 import { Card } from "@nextui-org/react";
@@ -33,11 +33,10 @@ function MenuCategorie({ showModal, setShowModal }: any) {
                 {Object.entries(card.categories)
                   .slice(0, 7)
                   .map(([key, value]: any) => (
-                    <li
-                      key={key}
-                      onClick={() => handleCommandeClick(value.title)}
-                    >
-                      {value.title}
+                    <li className="nav-item" key={key}>
+                      <a className="nav-link" href={`#${key}`}>
+                        {value.title}
+                      </a>
                     </li>
                   ))}
               </ul>
@@ -49,14 +48,11 @@ function MenuCategorie({ showModal, setShowModal }: any) {
                   id="mySelect"
                   onChange={() => handleCommandeClick()}
                 >
-                  {Object.entries(card.categories)
-                    .slice(7, Object.keys(card.categories).length)
-                    .map(([key, value]: any) => (
-                      <option key={key} value={value.title}>
-                        {" "}
-                        {value.title}
-                      </option>
-                    ))}
+                  {Object.entries(card.categories).slice(7, Object.keys(card.categories).length).map(([key, value]: any) => (
+                    <option key={key} style={{ backgroundColor: "#FFFFFF", cursor: "pointer" }} >{" "}
+                      {value.title}
+                    </option>
+                  ))}
                 </select>
 
               </div>

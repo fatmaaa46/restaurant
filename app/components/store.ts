@@ -51,8 +51,8 @@ export function setMode(): void {
     store.Mode = defaultStateStore.Mode;
 }
 
-export function addToCart(product: ProductType): void {
-    store.Panier.push(product);
+export function addToCart(product: any): void {
+    store.Panier = product
 }
 
 export default store;
