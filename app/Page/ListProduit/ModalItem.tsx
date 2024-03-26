@@ -33,6 +33,8 @@ function ModalItem({ modal, setModal, Item }: any) {
             </Modal.Header>
             <Modal.Body>
                 <img className="card-img-top" src={imageUrl} alt="Card image cap" />
+                Composition de base :
+                {Item?.basicCompositio?.title || 0}
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="primary" onClick={onClickAdd}>

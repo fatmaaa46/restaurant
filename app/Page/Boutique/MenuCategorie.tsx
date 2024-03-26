@@ -5,6 +5,7 @@ import { Listcard } from "@/app/constants/Listcard";
 import { Card } from "@nextui-org/react";
 import React, { useState } from "react";
 import { useSnapshot } from "valtio";
+import Painner from "../ListProduit/painner";
 
 
 function MenuCategorie({ showModal, setShowModal }: any) {
@@ -24,11 +25,11 @@ function MenuCategorie({ showModal, setShowModal }: any) {
   let card = JSON.parse(cat || null);
 
   return (
-    <div style={{ boxShadow: "0px 15px 10px -15px #111" }}>
+    <div style={{ boxShadow: "0px 10px 10px -10px #111" }}>
       <div className="container">
         <Card>
-          <div className="d-flex justify-content-between">
-            <div className="mt-2">
+          <div className="d-flex ">
+            <div className="mt-1">
               <ul style={{ backgroundColor: "#FFFFFF", cursor: "pointer" }}>
                 {Object.entries(card.categories)
                   .slice(0, 7)
@@ -42,22 +43,25 @@ function MenuCategorie({ showModal, setShowModal }: any) {
               </ul>
             </div>
             {Object.keys(card.categories).length > 7 && (
-              <div className="d-flex align-items-center">
+              <div className="d-flex ">
                 <select
-                  className="max-w-xs nav-link mx-5"
+                  className="mx-1 nav-link "
+                  style={{ width: "150px", height: "20px", marginTop: "20px", cursor: "pointer"  }}
                   id="mySelect"
                   onChange={() => handleCommandeClick()}
                 >
                   {Object.entries(card.categories).slice(7, Object.keys(card.categories).length).map(([key, value]: any) => (
-                    <option key={key} style={{ backgroundColor: "#FFFFFF", cursor: "pointer" }} >{" "}
+                    
+                      <option key={key} style={{ backgroundColor: "#FFFFFF", cursor: "pointer" }} >{" "}
                       {value.title}
-                    </option>
+                      </option>
+                    
                   ))}
                 </select>
 
               </div>
             )}
-
+            <Painner />
           </div>
 
         </Card>

@@ -587,3 +587,37 @@ li {
   color: rgba(243, 240, 240, 0.993);
   margin-bottom: 5px;
 }
+/************************************************************************************************/
+ .button {
+  
+   width: 100px;
+   height: 40px;
+   background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+   border: none;
+   border-radius: 50px;
+   color: rgb(255, 255, 255);
+   font-weight: 600;
+   display: flex;
+ margin-left: 2px;
+   gap: 5px;
+   cursor: pointer;
+   box-shadow: 1px 3px 0px rgb(255, 255, 255);
+   transition-duration: .3s;
+   margin-top: 10px;
+   margin-left: 20px;
+ }
+
+ .cartIcon {
+   width: 20px;
+   height: fit-content;
+ }
+
+ .cartIcon path {
+   fill: rgb(8, 8, 8);
+ }
+
+ .button:active {
+   transform: translate(2px, 0px);
+   box-shadow: 0px 1px 0px rgb(8, 8, 8);
+   padding-bottom: 1px;
+ }

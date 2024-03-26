@@ -6,7 +6,6 @@ import store, {
 } from "@/app/components/store";
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { useSnapshot } from "valtio";
-import Modal2 from "../Modal2/Modal2";
 import { Modal } from "react-bootstrap";
 import ModalItem from "./ModalItem";
 
